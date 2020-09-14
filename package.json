@@ -1,0 +1,42 @@
+{
+  "name": "vk-mini-app",
+  "version": "1.0.0",
+  "description": "vk-mini-app",
+  "main": "index.js",
+  "author": "kalukali",
+  "license": "MIT",
+  "scripts": {
+    "start": "",
+    "build": "",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --port 10888"
+  },
+  "dependencies": {
+    "@vkontakte/icons": "^1.40.0",
+    "@vkontakte/vk-bridge": "^2.2.8",
+    "@vkontakte/vkui": "^3.12.6",
+    "classnames": "^2.2.6",
+    "node-sass": "^4.14.1",
+    "prop-types": "latest",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.2.1",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-react": "^7.10.4",
+    "@svgr/webpack": "^5.4.0",
+    "babel-loader": "^8.1.0",
+    "cross-env": "^7.0.2",
+    "css-loader": "^4.3.0",
+    "html-webpack-plugin": "^4.4.1",
+    "redux-devtools-extension": "^2.13.8",
+    "sass-loader": "^9.0.3",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
