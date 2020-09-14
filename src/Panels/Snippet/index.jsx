@@ -53,7 +53,7 @@ const Snippet = (props) => {
                     <Separator style={{ margin: '2px 0' }} />
                     <SimpleCell disabled after={<Button mode="outline" style={{marginLeft:'12px'}} onClick={() => handleSetActivePanel(dispatch, DEP_SNIPPET)}>Помочь</Button>}>
                         <Text weight="regular" >{ user.donate ? `Собрано ${user.donate} из ${form.sum}` : `Помогите первым`}
-                        <br/><Progress value={user.donate} style={{marginTop:'8px'}}/></Text>
+                        <br/><Progress value={user.donate*100/form.sum} style={{marginTop:'8px'}}/></Text>
                     </SimpleCell>
                 </div>
             </Div>

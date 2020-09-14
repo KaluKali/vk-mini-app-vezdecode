@@ -58,7 +58,7 @@ const DepSnippet = (props) => {
                         <Text weight="regular" >{ form.date === '' ?
                             `Нужно собрать ещё ${ form.sum >= user.donate ? form.sum-user.donate : '0'} \u20BD` :
                             `Нужно собрать ${ form.sum >= user.donate ? form.sum-user.donate : '0'} \u20BD до ${form.date}` }<br/></Text>
-                        <Progress className="Progress" style={{marginTop:'8px' }} value={user.donate}/>
+                        <Progress className="Progress" style={{marginTop:'8px' }} value={user.donate*100/form.sum}/>
                     </SimpleCell>
                     <Separator style={{ margin: '2px 0' }} />
                     <Div><Text weight="medium">{form.description}</Text></Div>
